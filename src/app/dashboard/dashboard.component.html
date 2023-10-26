@@ -1,0 +1,16 @@
+<body>
+    <h1>Welcome</h1><br>
+    <div *ngIf="userClaims">
+        <span>UserName: {{userClaims.UserName}} </span>
+        <br>
+        <span>Email: {{userClaims.Email}} </span>
+        <br>
+        <span>LastName: {{userClaims.LastName}} </span>
+        <br>
+        <p>LoggedOn: {{userClaims.LoggedOn}} </p>
+
+    </div>
+    <!-- <p *ngIf="!userClaims">No Data Found</p> -->
+    <a [routerLink]="[]" (click)="logOut()">Logout</a><br>
+    
+</body>
